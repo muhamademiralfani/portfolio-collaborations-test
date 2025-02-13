@@ -12,9 +12,6 @@ app.use(cors());
 app.use("/api", router);
 
 
-app.listen(process.env.PORT, () => {
-    connectDB();
-    console.log(`Server running on port ${process.env.PORT}`);
-})
+connectDB();
 
 export default app;
