@@ -1,5 +1,6 @@
-import Auth from "../models/authModels";
-
+import Auth from "../models/authModels.js";
+import jwt from 'jsonwebtoken'
+import bcrypt from 'bcryptjs'
 
 export const registerController = async (req, res) => {
     const {username, email, password} = req.body
